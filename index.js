@@ -53,8 +53,8 @@ while (true) {
             ballToTarget = ballToTarget2;
         }
         if(launchBall(wizards[i], i, ballToTarget)) continue;
-        //if(launchFlipendo(wizards[i], i, ballToTarget)) continue;
-        //if(launchAccio(wizards[i], i, ballToTarget)) continue;
+        if(launchFlipendo(wizards[i], i, ballToTarget)) continue;
+        if(launchAccio(wizards[i], i, ballToTarget)) continue;
         
         var defensiveBalls = balls.filter((b) => {
             return myTeamId === 0 ? (b.x < 8000) : (b.x > 8000);
